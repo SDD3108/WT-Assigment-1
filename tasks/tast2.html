@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Projects</title>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-custom-green: #065535;
+            --color-custom-gold: #D4AF37;
+            --color-custom-oldlace: #FDF5E6;
+            --color-custom-ivory: #FFFFF0;
+            --color-custom-sand: #E1A95F;
+            --color-custom-rust: #C35237;
+            --color-custom-bronze: #8B5A2B;
+        }
+    </style>
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
 </head>
-<body>
-    task 2
+<body class="min-h-screen bg-custom-oldlace">
+    <header class="bg-custom-green w-full py-6 px-10">
+        <nav class="flex justify-between items-center">
+            <p class="class=""><a href="../index.html" class="text-custom-gold text-xl font-semibold">My Simplify Portfolio</a></p>
+            <ul class="flex gap-8 font-medium text-white">
+                <li><a href="../index.html" class="hover:text-custom-gold transition">Home</a></li>
+                <li><a href="../tasks/task1.html" class="hover:text-custom-gold transition">About Me (task 1)</a></li>
+                <li><a href="../tasks/tast2.html" class="hover:text-custom-gold transition">Projects (task 2)</a></li>
+                <li><a href="../tasks/task3.html" class="hover:text-custom-gold transition">Tribute (task 3)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="px-10 py-8 min-h-[64rem]">
+        <section class="bg-custom-green text-white p-8 rounded-xl">
+            <h1 class="text-4xl font-bold text-custom-gold">My World</h1>
+            <p class="mt-3 leading-7">
+                A simple overview of the interests, technologies and ideas
+                that keep me interested in development.
+            </p>
+        </section>
+        <section class="clearfix mt-8">
+            <aside class="float-left w-[28%] bg-custom-green text-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-custom-gold text-2xl font-bold">Interests</h2>
+                <ul class="mt-6">
+                    <li class="py-3 border-b border-custom-gold">Work</li>
+                    <li class="py-3 border-b border-custom-gold">Gaming</li>
+                    <li class="py-3 border-b border-custom-gold">Chill</li>
+                    <li class="py-3">Travel</li>
+                </ul>
+            </aside>
+            <section class="float-right w-[70%] bg-white p-8 rounded-xl shadow-lg">
+                <h2 class="text-custom-green text-3xl font-bold">What keeps me interested?</h2>
+                <p class="text-custom-bronze leading-8 mt-5">
+                    What I like about technology is that it combines creativity
+                    and logic. A simple idea can start as a sketch or a few lines
+                    of code and eventually become something that people actually use.
+                </p>
+                <p class="text-custom-bronze leading-8 mt-5">
+                    Development is also interesting because there is always another
+                    problem to solve. Even when a technology seems familiar,
+                    there is usually something new to learn or improve.
+                </p>
+                <div class="mt-10">
+                    <h3 class="text-custom-green text-2xl font-bold">Currently learning</h3>
+                    <ul class="mt-4 list-disc pl-6 text-custom-bronze leading-8">
+                        <li>Backend development</li>
+                        <li>Databases and API architecture</li>
+                        <li>C# and .NET</li>
+                        <li>Better UI and UX principles</li>
+                    </ul>
+                </div>
+                <div class="mt-10">
+                    <h3 class="text-custom-green text-2xl font-bold">My ideal project</h3>
+                    <p class="text-custom-bronze leading-8 mt-4">
+                        I would like to build a product that combines a clean
+                        interface with useful functionality and a strong technical
+                        foundation. For me, the best projects are not just visually
+                        impressive, they should solve an actual problem
+                    </p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer class="bg-custom-green px-10 py-8 text-white">
+        <div class="flex justify-between items-center">
+            <a href="#"><p class="font-medium">My Simplify Portfolio</p></a>
+            <p class="text-custom-gold">Satimov Damir</p>
+        </div>
+    </footer>
 </body>
 </html>

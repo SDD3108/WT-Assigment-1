@@ -1,11 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Steve Jobs</title>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-custom-green: #065535;
+            --color-custom-gold: #D4AF37;
+            --color-custom-oldlace: #FDF5E6;
+            --color-custom-ivory: #FFFFF0;
+            --color-custom-sand: #E1A95F;
+            --color-custom-rust: #C35237;
+            --color-custom-bronze: #8B5A2B;
+        }
+    </style>
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .tribute-heading {
+            font-family: "Playfair Display", serif;
+        }
+        .content{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .btn{
+            display: inline-block;
+            transition: 0.2s;
+        }
+        .btn:hover{
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
-<body>
-    task 3
+
+<body class="min-h-screen bg-custom-oldlace">
+    <header class="bg-custom-green w-full py-6 px-10">
+        <nav class="flex justify-between items-center">
+            <p class="class=""><a href="../index.html" class="text-custom-gold text-xl font-semibold">My Simplify
+                Portfolio</a></p>
+            <ul class="flex gap-8 font-medium text-white">
+                <li><a href="../index.html" class="hover:text-custom-gold transition">Home</a></li>
+                <li><a href="../tasks/task1.html" class="hover:text-custom-gold transition">About Me (task 1)</a></li>
+                <li><a href="../tasks/tast2.html" class="hover:text-custom-gold transition">Projects (task 2)</a></li>
+                <li><a href="../tasks/task3.html" class="hover:text-custom-gold transition">Tribute (task 3)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="px-10 py-8">
+        <div class="content max-w-7xl py-12">
+            <section class="mt-16 flex justify-between">
+                <div class="text-end relative">
+                    <div class="absolute text-start top-12">
+                        <h2 class="tribute-heading text-custom-green text-4xl font-bold">Important Events</h2>
+                        <ol class="mt-6 pl-6 list-decimal text-custom-bronze leading-9">
+                            <li>in 1955, Steve Jobs was born in San Francisco, California</li>
+                            <li>in 1976, Jobs and Steve Wozniak founded Apple Computer</li>
+                            <li>in 1984, Apple introduced the Macintosh computer</li>
+                            <li>in 1985, Jobs left Apple and founded NeXT</li>
+                            <li>in 1997, Jobs returned to Apple and helped lead the company through a major transformation</li>
+                            <li>in 2007, Apple introduced the first iPhone</li>
+                        </ol>
+                    </div>
+                    <img src="../images/Steve_Jobs_Headshot_2010_(cropped_4).jpg" alt="Portrait of Steve Jobs" class="max-w-full w-[20rem]  rounded-2xl ml-auto shadow-xl border-4 border-custom-gold">
+                    <h1 class="tribute-heading text-custom-green text-4xl font-bold mt-10">About Steve Jobs</h1>
+                    <p class="text-custom-bronze leading-8 mt-6">
+                        Steve Jobs was an American entrepreneur and technology
+                        visionary who co-founded Apple in 1976. He was born in
+                        1955 and died in 2011 at the age of 56. Jobs played a
+                        major role in the development of products such as the
+                        Macintosh, iPod, iPhone and iPad. His approach to combining
+                        technology, simplicity and design had a major influence on
+                        the modern technology industry.
+                    </p>
+                </div>
+            </section>
+            <section class="mt-16">
+                <h2 class="tribute-heading text-custom-green text-4xl font-bold">Key Contributions</h2>
+                <ul class="mt-6 pl-6 list-disc text-custom-bronze leading-9">
+                    <li>Co-founded Apple Computer with Steve Wozniak</li>
+                    <li>Helped popularize personal computers through the Macintosh</li>
+                    <li>Led the development of the iPod and transformed digital music</li>
+                    <li>Introduced the iPhone and changed the smartphone industry.</li>
+                    <li>Helped make product design and user experience central to consumer technology</li>
+                </ul>
+            </section>
+            <section class="mt-16 border-l-4 border-custom-gold pl-6">
+                <h3 class="tribute-heading text-custom-green text-3xl font-bold">His impact on technology</h3>
+                <p class="text-custom-bronze leading-8 mt-4">
+                    Steve Jobs was not responsible for inventing every technology
+                    used in Apple's products. His major strength was bringing
+                    technology, design and user experience together into products
+                    that were understandable and attractive to ordinary people.
+                </p>
+                <p class="text-custom-bronze leading-8 mt-4">
+                    His work helped change how people interact with computers,
+                    music, phones and digital media. The philosophy of creating
+                    simple products with a strong focus on the user continues to
+                    influence technology companies today.
+                </p>
+            </section>
+            <section class="mt-16 bg-custom-ivory border border-custom-gold rounded-2xl p-8">
+                <h3 class="tribute-heading text-custom-green text-3xl font-bold">A famous idea</h3>
+                <p class="text-custom-bronze leading-8 mt-4">
+                    Jobs became known for presenting technology as something more
+                    than hardware. For him, the experience of using a product was
+                    just as important as the technology inside it.
+                </p>
+            </section>
+            <section class="mt-12">
+                <a href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank" class="inline-block bg-custom-green text-white px-8 py-4 rounded-lg font-semibold btn">Learn more</a>
+                <a href="https://www.apple.com/" target="_blank" class="inline-block ml-6 text-custom-green font-semibold hover:text-custom-rust transition">Apple Site</a>
+            </section>
+        </div>
+    </main>
+    <footer class="bg-custom-green px-10 py-8 text-white">
+        <div class="flex justify-between items-center">
+            <a href="#">
+                <p class="font-medium">My Simplify Portfolio</p>
+            </a>
+            <p class="text-custom-gold">Satimov Damir</p>
+        </div>
+    </footer>
 </body>
+
 </html>

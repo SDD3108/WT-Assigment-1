@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Projects</title>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-custom-green: #065535;
+            --color-custom-gold: #D4AF37;
+            --color-custom-oldlace: #FDF5E6;
+            --color-custom-ivory: #FFFFF0;
+            --color-custom-sand: #E1A95F;
+            --color-custom-rust: #C35237;
+            --color-custom-bronze: #8B5A2B;
+        }
+    </style>
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+        #table-title{
+            letter-spacing: -0.03em;
+        }
+        .grades-table{
+            border-collapse: collapse;
+        }
+        .grades-table th, .grades-table td{
+            border: 1px solid #065535;
+            padding: 1rem;
+            text-align: center;
+        }
+        .grades-table th{
+            background-color: #065535;
+            color: white;
+        }
+        .grades-table tbody tr:nth-child(even){
+            background-color: #FDF5E6;
+        }
+        .highlight-row{
+            background-color: #D4AF37 !important;
+            color: #065535;
+        }
+        .form-container{
+            width: 500px;
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #FFFFF0;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(6, 85, 53, 0.12);
+        }
+        .form-group{
+            margin-bottom: 1.5rem;
+        }
+        .form-group label{
+            display: block;
+            font-weight: 700;
+            color: #065535;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input, .form-group select, .form-group textarea{
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #8B5A2B;
+            border-radius: 0.5rem;
+            outline: none;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus{
+            border-color: #065535;
+        }
+        .radio-group{
+            display: flex;
+            gap: 2rem;
+        }
+        .radio-group label{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+        .radio-group input{
+            width: auto;
+        }
+        .submit-button{
+            width: 100%;
+            background-color: #065535;
+            color: white;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .submit-button:hover{
+            background-color: #8B5A2B;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-custom-oldlace">
+    <header class="bg-custom-green w-full py-6 px-10">
+        <nav class="flex justify-between items-center">
+            <p class="class=""><a href="../index.html" class="text-custom-gold text-xl font-semibold">My Simplify Portfolio</a></p>
+            <ul class="flex gap-8 font-medium text-white">
+                <li><a href="../index.html" class="hover:text-custom-gold transition">Home</a></li>
+                <li><a href="../tasks/task1.html" class="hover:text-custom-gold transition">About Me (task 1)</a></li>
+                <li><a href="../tasks/tast2.html" class="hover:text-custom-gold transition">Projects (task 2)</a></li>
+                <li><a href="../tasks/task3.html" class="hover:text-custom-gold transition">Tribute (task 3)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="px-10 py-8 min-h-[64rem]">
+        <section>
+            <h1 id="table-title" class="text-custom-green text-5xl font-bold">Student Grades</h1>
+            <p class="text-custom-bronze mt-4 leading-8 max-w-3xl">A simple table showing student performance in different subjects</p>
+            <div class="overflow-x-auto mt-10">
+                <table class="grades-table w-full bg-white rounded-xl overflow-hidden shadow-lg">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Damir Satimov</td>
+                            <td>Web Development</td>
+                            <td>95</td>
+                            <td>Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>Ayan Sarsenov</td>
+                            <td>Database</td>
+                            <td>88</td>
+                            <td>Good</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>Amir Bekov</td>
+                            <td>C# Programming</td>
+                            <td>98</td>
+                            <td>Excellent</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Class Average</td>
+                            <td>91</td>
+                            <td>Good</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="mt-20">
+            <h2 class="text-custom-green text-4xl font-bold"> Feedback Form</h2>
+            <p class="text-custom-bronze mt-4 leading-8 max-w-3xl">Share your feedback about the course and your learning experience</p>
+            <form class="form-container mt-10">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="role">Role</label>
+                    <select id="role">
+                        <option value="">Select your role</option>
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Would you recommend this course?</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="recommend" value="yes">
+                            <p>Yes</p>
+                        </label>
+                        <label>
+                            <input type="radio" name="recommend" value="no">
+                            <p>No</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" rows="5" placeholder="Write your comments"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-custom-green px-10 py-8 text-white">
+        <div class="flex justify-between items-center">
+            <a href="#"><p class="font-medium">My Simplify Portfolio</p></a>
+            <p class="text-custom-gold">Satimov Damir</p>
+        </div>
+    </footer>
+</body>
+</html>
